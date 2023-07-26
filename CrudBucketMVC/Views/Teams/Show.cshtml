@@ -1,0 +1,11 @@
+﻿@model Team
+
+<h1>@Model.Location @Model.Name</h1>
+<h2>@Model.Wins-@Model.Losses</h2>
+
+<a href="/teams/@Model.Id/edit">edit</a> <span>
+    <form method="post" action="/teams/delete/@Model.Id">
+        <button type="submit">Delete</button>
+    </form>
+</span>
+<a href="/teams">Back</a>

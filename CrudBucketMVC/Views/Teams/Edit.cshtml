@@ -1,0 +1,15 @@
+﻿@model Team
+
+<h1>Edit the @Model.Name</h1>
+
+<form method="post" action="/teams/@Model.Id">
+    <label for="Location">Location: </label>
+    <input type="text" id="Location" name="Location" value="@Model.Location"/><br />
+    <label for="Name">Name: </label>
+    <input type="text" id="Name" name="Name" value="@Model.Name"/><br />
+    <label for="Wins">Wins: </label>
+    <input type="number" id="Wins" name="Wins" value="@Model.Wins"/>
+    <label for="Losses">Losses: </label>
+    <input type="number" id="Losses" name="Losses" value="@Model.Losses"/><br />
+    <button type="submit">Update Team</button>
+</form>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Team>
+<h1>Teams:</h1>
+
+@foreach (Team team in Model)
+{
+    <h4><a href="/teams/@team.Id">@team.Location @team.Name</a> @team.Wins-@team.Losses</h4>
+}
+
+<a href="/teams/new">Add a New Team</a>
